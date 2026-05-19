@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Portfólio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(135deg, #1e293b, #020617);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      color: #94a3b8;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      margin-bottom: 15px;
+      border-left: 4px solid #38bdf8;
+      padding-left: 10px;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 15px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    ul li {
+      background: #334155;
+      padding: 8px 12px;
+      border-radius: 8px;
+      font-size: 0.9rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      border-top: 1px solid #334155;
+      color: #94a3b8;
+    }
+
+    a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Werisson Diniz Cruz</h1>
+  <p>Desenvolvedor | Machine Learning</p>
+</header>
+
+<div class="container">
+
+  <section>
+    <h2>Sobre mim</h2>
+    <div class="card">
+      <p>
+        Formado em Sistemas de Informação, com especialização em Banco de Dados e Inteligência Artificial, tenho conhecimento em análise e manipulação de dados, em sql.
+
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Conhecimentos</h2>
+    <ul>
+      <li>Python</li>
+      <li>sql</li>
+      <li>Machine Learning</li>
+      <li>Streamlit</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Projetos</h2>
+
+    <div class="card">
+      <h3>Sistema de Recomendação Nutricional</h3>
+      <p>Aplicação em Python com Streamlit para geração de planos alimentares personalizados.</p>
+      <a href="#">Ver projeto</a>
+    </div>
+
+    <div class="card">
+      <h3>testes</h3>
+      <p>Modelo de machine learning para prever produção, identificar perdas e otimizar processos industriais.</p>
+      <a href="#">Ver projeto</a>
+    </div>
+
+  </section>
+
+  <section>
+    <h2>Contato</h2>
+    <div class="card">
+      <p>Email: werissondiniz@gmail.com</p>
+      <p>GitHub: <a href="#">github.com/seuusuario</a></p>
+      <p>LinkedIn: <a href="#">linkedin.com/in/seuusuario</a></p>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <p>© 2026 - Werisson</p>
+</footer>
+
+</body>
+</html>
+
