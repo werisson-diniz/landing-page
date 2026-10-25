@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Recomendação Nutricional | Detalhes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 50px 20px;
+      background: linear-gradient(135deg, #1e293b, #020617);
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      color: #94a3b8;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 25px;
+      border-radius: 12px;
+      margin-bottom: 25px;
+    }
+
+    h2 {
+      margin-bottom: 15px;
+      border-left: 4px solid #38bdf8;
+      padding-left: 10px;
+    }
+
+    /* Container responsivo para o vídeo (16:9) */
+    .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 */
+      height: 0;
+      overflow: hidden;
+      border-radius: 10px;
+      background: #020617;
+      margin-top: 15px;
+    }
+
+    .video-wrapper video,
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    ul li {
+      background: #334155;
+      padding: 6px 12px;
+      border-radius: 8px;
+      font-size: 0.85rem;
+    }
+
+    .actions {
+      display: flex;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 18px;
+      border-radius: 8px;
+      background: #38bdf8;
+      color: #0f172a;
+      font-weight: 600;
+      text-decoration: none;
+      transition: 0.2s;
+    }
+
+    .btn:hover {
+      background: #0284c7;
+      color: #ffffff;
+    }
+
+    .btn-secondary {
+      background: #334155;
+      color: #e2e8f0;
+    }
+
+    .btn-secondary:hover {
+      background: #475569;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      border-top: 1px solid #334155;
+      color: #94a3b8;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Sistema de Recomendação Nutricional</h1>
+  <p>Demonstração e visão técnica da aplicação</p>
+</header>
+
+<div class="container">
+
+  <!-- Bloco do Vídeo -->
+  <section class="card">
+    <h2>Vídeo Demonstrativo</h2>
+    <p>Confira abaixo o fluxo de entrada de dados, execução do algoritmo e geração dos planos alimentares:</p>
+    
+    <div class="video-wrapper">
+      <!-- OPÇÃO A: Se o vídeo estiver no YouTube, use o iframe (descomente trocando pelo seu link): -->
+      <!-- <iframe src="https://www.youtube.com/embed/SEU_VIDEO_ID" allowfullscreen></iframe> -->
+
+      <!-- OPÇÃO B: Se o arquivo .mp4 estiver no próprio repositório (ex: na pasta assets/demo.mp4): -->
+      <video controls poster="">
+        <source src="diagnostico.mp4" type="video/mp4">
+        Seu navegador não suporta a tag de vídeo.
+      </video>
+    </div>
+  </section>
+
+  <!-- Detalhes do Projeto -->
+  <section class="card">
+    <h2>Sobre a Solução</h2>
+    <p>Protótipo interativo em Python e Streamlit para estimativa de necessidades energéticas e recomendação nutricional inteligente. A aplicação conta com uma interface conversacional em linguagem natural que interpreta os dados e preferências do usuário para calcular suas demandas calóricas diárias. Utilizando a Tabela TACO (UNICAMP) como base de referência e o algoritmo de clusterização k-means, o sistema agrupa e seleciona os alimentos mais adequados ao perfil nutricional calculado, gerando sugestões alimentares personalizadas de forma rápida e intuitiva</p>
+    
+    <h3 style="margin-top: 20px; font-size: 1.1rem;">Tecnologias Utilizadas</h3>
+    <ul>
+      <li>Python</li>
+      <li>Streamlit</li>
+    </ul>
+
+    <div class="actions">
+      <a href="index.html" class="btn btn-secondary">← Voltar ao Início</a>
+      <!-- Link para o repositório do projeto no seu GitHub -->
+      <a href="https://github.com/werisson-diniz/App_diagnostico" target="_blank" class="btn">Ver Código no GitHub</a>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <p>© 2026 - Werisson</p>
+</footer>
+
+</body>
+</html>
